@@ -1,0 +1,37 @@
+GET http://localhost:5000/users
+
+###
+
+GET http://localhost:5000/files
+Content-Type: application/json
+# Set-Cookie: connect.sid=s%3A69JA2JeesL9d3c-4uTQl-HT6tE0xNN8.JP%2Bn%2FewU4xhwkUNEcbj354nrhyHm7cChrNsXBXgWEAc; Path=/; Expires=Sun, 13 Feb 2022 16:38:06 GMT; HttpOnly
+
+{
+    "username": "Jima",
+    "password": 123
+}
+
+###
+
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "username": "Jims",
+    "password": 1234
+}
+
+###
+
+POST http://localhost:5000/users/logout
+Content-Type: application/json
+
+###
+
+POST http://localhost:5000/users/signup
+Content-Type: application/json
+
+{
+    "username": "Jims",
+    "password": 1234
+}
